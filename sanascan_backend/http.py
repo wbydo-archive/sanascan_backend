@@ -24,7 +24,7 @@ class RootResource:
         self._estimators = {}
 
         # あとで変更
-        with (Path.home() / 'arpa/LM0006.txt').open() as f:
+        with (Path.home() / 'arpa/aoi.txt').open() as f:
             self._lm = LangModel(f.read())
 
     def on_post(self, req: Request, resp: Response, *, eid: int = 0) -> None:
